@@ -30,7 +30,7 @@ class T3Suggest_IndexController extends Omeka_Controller_AbstractActionControlle
             $this->_helper->redirector('index');
         }
 
-        $t3Suggest = $this->_helper->db->getTable('T3Suggest')->findByElementId($elementId);
+        $T3Suggest = $this->_helper->db->getTable('T3Suggest')->findByElementId($elementId);
 
         // Handle an existing suggest record.
         if ($t3Suggest) {
