@@ -22,7 +22,7 @@ jQuery(document).ready(function() {
             <label for="element-id"><?php echo __('Element'); ?></label>
         </div>
         <div class="inputs five columns omega">
-            <p class="explanation"><?php echo __('Select an element to assign it '
+            <p class="explanation"><?php echo __('Select an element to assign '
             . 'a Tematres authority/vocabulary. Elements already assigned '
             . 'an authority/vocabulary are marked with an asterisk (*).'); ?></p>
             <?php echo $this->formSelect('element_id', null, array('id' => 'element-id'), $this->form_element_options) ?>
@@ -33,7 +33,7 @@ jQuery(document).ready(function() {
             <label for="suggest-endpoint"><?php echo __('Authority/Vocabulary'); ?></label>
         </div>
         <div class="inputs five columns omega">
-            <p class="explanation"><?php echo __('Select from the list the authority/vocabulary to enable the autosuggest feature for the above element. <br/> To disable the feature, just deselect the option<br/>.For more information about the authorities and vocabularies available int Tematres, see  '
+            <p class="explanation"><?php echo __('Select from the list the authority/vocabulary to enable the autosuggest feature for the above element. To disable the feature, just deselect the option. For more information about the authorities and vocabularies available int Tematres, see  '
             . '%shttps://vocabularyserver.com/vocabularies/%s', '<a href="https://vocabularyserver.com/vocabularies/" target="_blank" title="Tematres vocabularies">', '</a>'); ?></p>
             <?php echo $this->formSelect('suggest_endpoint', null, array('id' => 'suggest-endpoint'), $this->form_suggest_options); ?>
         </div>

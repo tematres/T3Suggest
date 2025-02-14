@@ -169,12 +169,9 @@ class T3Suggest_IndexController extends Omeka_Controller_AbstractActionControlle
         $suggests = $this->_helper->db->getTable('T3Suggest')->getSuggestEndpoints();
         $options = array('' => __('Select Below'));
         foreach ($suggests as $suggestEndpoint => $suggest) {
-            if ('http://id.loc.gov/suggest' == $suggestEndpoint) {
-                $options[$suggestEndpoint] = __($suggest['name']);
-            } else {
-                $optGroup = preg_match('#^http://id\.loc\.gov/vocabulary#', $suggestEndpoint) ? __('Vocabularies'): __('Authorities');
+                //$optGroup = __('Vocabularies');
+                $optGroup = $suggest['lang'];
                 $options[$optGroup][$suggestEndpoint] = __($suggest['name']);
-            }
         }
         return $options;
     }
@@ -198,6 +195,7 @@ class T3Suggest_IndexController extends Omeka_Controller_AbstractActionControlle
             $authorityVocabulary = $suggestEndpoints[$T3Suggest->suggest_endpoint]['name'];
             $assignments[] = array('element_set_name' => __($elementSet->name),
                                    'element_name' => __($element->name),
+                                   'element_lang' => __($element->lang),
                                    'authority_vocabulary' => __($authorityVocabulary));
         }
         return $assignments;

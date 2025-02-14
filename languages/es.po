@@ -1,0 +1,91 @@
+# Translation for the Tematres Suggest plugin for Omeka.
+# @copyright Copyright 2025 Diego Ferreyra
+# This file is distributed under the same license as the Omeka package.
+#
+# Translators:
+# Based on soruce from Rubén Alcaraz Martínez <rubenalcarazmartinez@gmail.com>, 2013
+# Diego Ferreyra <tematres@r020.com.ar>, 2025
+msgid ""
+msgstr ""
+"Project-Id-Version: Omeka Classic\n"
+"Report-Msgid-Bugs-To: https://github.com/tematres/T3Suggest/issues\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Spanish (http://www.transifex.com/omeka/omeka/language/es/)\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.2\n"
+
+msgid "All Authorities and Vocabularies"
+msgstr "Todas las listas de autoridad y vocabularios controlados"
+
+msgid "All Authorities"
+msgstr "Todas las listas de autoridades"
+
+msgid "All Vocabularies"
+msgstr "Todos los vocabularios controlados"
+
+#: LcSuggestPlugin.php:79
+msgid "Tematres Suggest"
+msgstr "Tematres Suggest"
+
+#: controllers/IndexController.php:41
+msgid "Successfully disabled the element's suggest feature."
+msgstr "La función de sugerencia para los elementos se ha desactivado correctamente."
+
+#: controllers/IndexController.php:47 controllers/IndexController.php:59
+msgid "Invalid suggest endpoint. No changes have been made."
+msgstr "Endpoint inválido para la sugerencia. No se han guardado los cambios."
+
+#: controllers/IndexController.php:52
+msgid "Successfully edited the element's suggest feature."
+msgstr "La función de sugerencia para los elementos se ha editado correctamente."
+
+#: controllers/IndexController.php:66
+msgid "Successfully enabled the element's suggest feature."
+msgstr "La función de sugerencia para los elementos se ha activado correctamente."
+
+#: controllers/IndexController.php:165
+msgid "Vocabularies"
+msgstr "Vocabularios controlados"
+
+#: controllers/IndexController.php:165
+msgid "Authorities"
+msgstr "Listas de autoridades"
+
+#: views/admin/index/index.php:22 views/admin/index/index.php:58
+msgid "Element"
+msgstr "Elemento"
+
+#: views/admin/index/index.php:25
+msgid "Select an element to assign a Tematres authority/vocabulary. Elements already assigned an authority/vocabulary are marked with an asterisk (*)."
+msgstr "Selecciona un elemento para asignarle una lista de autoridades/vocabulario Tematres. Los elementos que tienen asignado una autoridad/vocabulario están marcados con un asterisco (*)."
+
+#: views/admin/index/index.php:33 views/admin/index/index.php:59
+msgid "Authority/Vocabulary"
+msgstr "Lista de autoridades/Vocabulario"
+
+#: views/admin/index/index.php:36
+#, php-format
+msgid "Select from the list the authority/vocabulary to enable the autosuggest feature for the above element. To disable the feature, just deselect the option. For more information about the authorities and vocabularies available int Tematres, see %shttps://vocabularyserver.com/vocabularies/%s"
+msgstr "Añade una lista de autoridades/vocabulario Tematres para habilitar la función de auto-sugerencia para el elemento. Para desactivar la función simplemente anula la selección de la opción. Si necesitas información sobre las listas de autoridades y vocabularios disponibles, puedes visitar %shttps://vocabularyserver.com/vocabularies%s"
+
+#: views/admin/index/index.php:47
+msgid "Edit Suggest"
+msgstr "Editar sugerencia"
+
+#: views/admin/index/index.php:52
+msgid "Current Assignments"
+msgstr "Asignaciones actuales"
+
+#: views/admin/index/index.php:57
+msgid "Element Set"
+msgstr "Set de elementos"
+
+#: views/admin/index/index.php:73
+msgid "There are no suggest assignments."
+msgstr "No hay sugerencias asignadas."
